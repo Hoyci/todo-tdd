@@ -1,30 +1,19 @@
-# React + TypeScript + Vite
+# React + MSW + Vitest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This simple projest was built with the intention of learning how to build a project using TDD (Test Driven Development) and how to mock informations to test the application using MSW (Mock Service Worker)
 
-Currently, two official plugins are available:
+### `npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This command is used to run the application in the development mode.
+The idea is not to be something sophisticated and beautiful because the value of this project are in the structure and tests.
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
-## Expanding the ESLint configuration
+### `npm run test`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This command is used to run the application tests.
+You'll se that all components and pages of this applications have been tested
 
-- Configure the top-level `parserOptions` property like this:
+### `npm run test:coverage`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+This command is used to run see the application tests coverage.
+You'll see that I achieved 100% of lines tested with tests in this application.
